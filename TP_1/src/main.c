@@ -13,13 +13,16 @@
 #include "Funciones.h"
 
 int main(void) {
+	setbuf(stdout, NULL);
+
 	float numeroUno = 0, numeroDos = 0;
 	float suma, resta, multiplicacion, division;
-	int factorialUno = 0, factorialDos = 0, flagNumeroUno = 0, flagNumeroDos = 0;
+	int factorialUno, factorialDos, flagNumeroUno = 0, flagNumeroDos = 0;
 	int opcion;
 
 	do
 	    {
+			printf("--------------CALCULADORA---------------\n");
 	        printf("Seleccione la opcion deseada: \n");
 	        printf("1- Para ingresar el primer numero: \n");
 	        printf("2- Para ingresar el segundo numero: \n");
@@ -34,11 +37,11 @@ int main(void) {
 	        switch (opcion)
 	        {
 	        case 1:
-	        	numeroUno = getFloat ("Ingrese el primer numero: ");
+	        	numeroUno = getFloat ("    Ingrese el primer numero: ");
 	        	flagNumeroUno = 1;
 	            break;
 	        case 2:
-	        	numeroDos = getFloat ("Ingrese el segundo numero: ");
+	        	numeroDos = getFloat ("	   Ingrese el segundo numero: ");
 	        	flagNumeroDos = 1;
 	            break;
 	        case 3:
