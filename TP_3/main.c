@@ -10,7 +10,6 @@ int main()
     int opcion;
     LinkedList* listaEmpleados = ll_newLinkedList();
     int flag = 0, flag2 = 0;
-
     do
     {
         opcion = menu();

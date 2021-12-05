@@ -1,41 +1,59 @@
-/** \brief Funcion que devuelve la suma entre dos numeros
- * \param Pide el primer sumando
- * \param Pide el segundo sumando
- * \return Devuelve la suma entre los dos numeros ingresados
- */
-float sumar(float, float);
-
-/** \brief Funcion que devuelve el resto entre dos numeros
- * \param Pide el minuendo
- * \param Pide el sustraendo
- * \return Devuelve el resto entre los dos numeros ingresados
- */
-float restar(float, float);
-
-/**
- * \param Pide el primer factor
- * \param Pide el segundo factor
- * \return Devuelve el producto entre los dos factores
- */
-float multiplicar(float, float);
-
-/**
- * \param Pide el dividendo
- * \param Pide el divisor
- * \return Devuelve el cociente entre los dos numeros ingresados
- */
-float dividir(float, float);
-
-/**
- * \param Pide el valor numerico entero
- * \return Devuelve el factorial del numero que se ingreso
- */
-int factorial(int);
-
-/** \brief Pide un numero al usuario y devuelve el resultado
+/*
+ * Funciones.h
  *
- * \param El mensaje que se le mostrara al usuario
- * \return El numero ingresado por el usuario
- *
+ *  Created on: 2 dic. 2021
+ *      Author: caroc
  */
+
+#ifndef FUNCIONES_H_
+#define FUNCIONES_H_
+
+/// @brief
+///
+/// @param n1
+/// @param n2
+/// @return
+int menu(float n1, float n2);
+
+/// @brief Realiza la suma entre dos numeros
+///
+/// @param n1 Primer sumando
+/// @param n2 Segundo sumando
+/// @return Devuelve el resultado de la operacion
+float sumar(float n1, float n2);
+
+/// @brief Realiza la resta entre dos numeros
+///
+/// @param n1 Minuendo
+/// @param n2 Sustraendo
+/// @return Devuelve el resultado de la operacion
+float restar(float n1, float n2);
+
+/// @brief Multiplica dos números
+///
+/// @param n1 Primer factor
+/// @param n2 Segundo factor
+/// @return Devuelve el resultado de la operacion
+float multiplicar(float n1, float n2);
+
+/// @brief Divide dos números
+///
+/// @param n1 Dividendo
+/// @param n2 Divisor
+/// @return Devuelve el resultado de la operacion, o 0 en caso de no ser posible realizar la operacion
+float dividir(float n1, float n2);
+
+/// @brief Realiza el factorial de un número
+///
+/// @param n Numero
+/// @return Devuelve el resultado de la operacion
+int factorial(int n);
+
+/// @brief Pide un numero al usuario
+///
+/// @param mensaje
+/// @return El número ingresado por el usuario
 float getFloat(char mensaje[]);
+
+
+#endif /* FUNCIONES_H_ */
